@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Added link to the jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Javascript link/call can be found at bottom of document before closing body tag -->
+
+    <title>Train-Schedule</title>
+
+    <!-- Logo in the network Window tab (next to title) -->
+    <link rel="icon" href="assets/images/thomas_tank.jpg">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Row containing the Jumbrotron title of page -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="jumbotron">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Row to contain the Train table -->
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamically create train schedules here -->
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <!-- Row to contain the form for the user to input a new train's schedule -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header darkHeader">
+                        <strong>Train Schedule</strong>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="train-name">Train Name</label>
+                                <input class="form-control" id="train-name" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="destination">Destination</label>
+                                <input class="form-control" id="destination" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="train-start">First Train Time (HH:mm Military Time)</label>
+                                <input class="form-control" id="train-start" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="frequency">Frequency</label>
+                                <input class="form-control" id="frequency" type="number">
+                            </div>
+                            <button class="btn btn-primary" id="submit-train" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Added Moment JS -->
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <!-- connect FireBase and Homework app JS files -->
+        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+/* 
+    ELEMENT Selectors
+*/
+
+
+/* 
+    Class Selectors
+*/
+.darkHeader {
+    background-color: black;
+    color: white;
+}
+
+
+/* 
+    ID Selectors
+*/
+#title {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  
+#train-table {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin-bottom: 3%;
+}
+  
+#add-train-form {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
