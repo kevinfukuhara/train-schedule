@@ -24,8 +24,9 @@
         <!-- Row containing the Jumbrotron title of page -->
         <div class="row">
             <div class="col-sm-12">
-                <div class="jumbotron">
-
+                <div class="jumbotron" id="title">
+                    <h1>Any Time is Train Time.</h1>
+                    <h3>Choo Choo! Better catch your train with my app!</h3>
                 </div>
             </div>
         </div>
@@ -33,7 +34,7 @@
         <!-- Row to contain the Train table -->
         <div class="row">
             <div class="col-sm-12">
-                <table class="table">
+                <table class="table" id="train-table">
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">Train Name</th>
@@ -47,14 +48,13 @@
                         <!-- Dynamically create train schedules here -->
                     </tbody>
                 </table>
-
             </div>
         </div>
 
         <!-- Row to contain the form for the user to input a new train's schedule -->
         <div class="row">
             <div class="col-sm-12">
-                <div class="card">
+                <div class="card" id="add-train-form">
                     <div class="card-header darkHeader">
                         <strong>Train Schedule</strong>
                     </div>
@@ -69,7 +69,7 @@
                                 <input class="form-control" id="destination" type="text">
                             </div>
                             <div class="form-group row">
-                                <label for="train-start">First Train Time (HH:mm Military Time)</label>
+                                <label for="train-start">First Train Time (hh:mm A Civilian Time)</label>
                                 <input class="form-control" id="train-start" type="text">
                             </div>
                             <div class="form-group row">
